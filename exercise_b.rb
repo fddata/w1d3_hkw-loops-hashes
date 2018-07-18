@@ -95,7 +95,7 @@ fraser_hash = { "Fraser" => {
   :twitter => "not on it!",
   :lottery_numbers => [1, 2, 3, 4, 45, 20, 9],
   :home_town => "Ayr",
-  :pets => [  {    :name => "milly",    :species => "dog"  },  ]
+  :pets => [  {:name => "milly", :species => "dog"},]
   }
 }
 
