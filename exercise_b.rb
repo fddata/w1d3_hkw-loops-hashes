@@ -85,10 +85,10 @@ p users['Erik'][:lottery_numbers].push(7)
 users['Erik'][:home_town] = "Edinburgh"
 
 # Add a pet dog to Erik called "Fluffy"
-users['Erik'][:pets] = {
+users['Erik'][:pets].push({
   name: 'Fluffy',
   species: 'dog',
-}
+})
 
 # Add another person to the users hash
 fraser_hash = { "Fraser" => {
@@ -100,5 +100,7 @@ fraser_hash = { "Fraser" => {
 }
 
 #updating in place using merge!
-users.merge!(fraser_hash)
+#users.merge!(fraser_hash)
+#or
+users["Fraser"] = fraser_hash
 p users

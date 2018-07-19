@@ -24,12 +24,18 @@ p "The index position of Linlithgow is " + stops.find_index("Linlithgow").to_s()
 # Remove "Livingston" from the array using its name
 stops.delete("Livingston")
 
+#return falkirk high
+p stops.at(2)
+p stops.fetch(2)
+stops.at[-5]
+
 # Delete "Cumbernauld" from the array by index
 cumbernauld_index = stops.find_index("Cumbernauld")
 stops.delete_at(cumbernauld_index)
 
 # How many stops there are in the array?
 p "There are " + stops.length.to_s() + " stops in the array"
+p "There are " + stops.count.to_s() + " stops in the array"
 
 # Reverse the positions of the stops in the array
 stops = stops.reverse()
